@@ -24,6 +24,14 @@ class complex
         System.out.println("Real part is"+real);
         System.out.println("Imag part is"+imag);
     }
+    //Addition of two complex number for that purpose we want to pass one object in addition function.
+    public void additionOfComplexNumber(complex num1)
+    {
+        complex result = new complex();
+        result.imag = imag + num1.imag;
+        result.real = real + num1.real;
+        result.display();
+    }
 }
 public class HelloWorld {
 
@@ -34,9 +42,13 @@ public class HelloWorld {
         // Hi this is simple program for git-hub
         System.out.println("helloworld.HelloWorld.main()");
         //i am creating object of the complex number and call the function of complex number.
-        complex c = new complex();
-        c.accept();
-        c.display();
+        complex num1 = new complex();
+        num1.accept();
+        //num2 is the second complex number.
+        complex num2 = new complex();
+        num2.accept();
+        num1.additionOfComplexNumber(num2);
+        
     }
     
 }
