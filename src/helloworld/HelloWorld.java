@@ -12,6 +12,13 @@ package helloworld;
 class complex
 {
     double real,imag;
+    //constructor to initialize real and imag part of complex object.
+    //if you dont want to call accept and assign some values then you nedd to write constructor.
+    complex()
+    {
+        real = 5;
+        imag = 6;
+    }
     //Using accept method we are assign value for the real and imag part of complex number.
     public void accept()
     {
@@ -46,7 +53,7 @@ public class HelloWorld {
         num1.accept();
         //num2 is the second complex number.
         complex num2 = new complex();
-        num2.accept();
+     //   num2.accept();
         num1.additionOfComplexNumber(num2);
         
     }
